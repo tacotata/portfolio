@@ -19,116 +19,123 @@
    <!--js link   -->
     <script src="main.js" defer></script> 
 </head>
-<body>
-    <!-- Navbar -->
-    <nav id = "navbar">
-        <div class="navbar__logo"> 
-            <a href="#" class="logo__link">
-            <h1 class="blind">  安 </h1>  
-            </a>
+<body> 
+    <div class="main__wrap">  
+        <div class="main__wrap--left">    
+            <!-- Navbar -->
+            <nav id = "navbar">
+                <div class="navbar__logo"> 
+                    <a href="#" class="navbar__logo-link">
+                    <h1 class="navbar__logo-big"> A </h1>     
+                    <p class="navbar__logo-small"> Siyeon </p>                     
+                    </a>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__menu-item">home</li>
+                    <li class="navbar__menu-item">about</li>
+                    <li class="navbar__menu-item">work</li>
+                    <li class="navbar__menu-item">skils</li>
+                    <li class="navbar__menu-item">contact</li>
+                </ul>     
+            </nav>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Work</li>
-            <li class="navbar__menu__item">Skils</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>     
-    </nav>
-    <!-- Home -->
-    <section id="home">
-        <div class="home__container"> 
-            <h1>안녕하세요! <br> 안시연입니다.</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus                     
-            </p>
-            <a href=""><button class="home__btn--contact">Contet Me </button></a>
-        </div>
-    </section>
-    <!-- about -->      
-    <section id="about"> 
-        <div class="about__img">
-            <img src="imgs/shop1.jpg" 
-                alt="Siyeon's profile photo"               
-            />
-        </div>
-        <div class="about__introduce"> 
-            <h1>About me </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
-                rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
-                deserunt doloremque laudantium similique corrupti, iusto optio rerum in
-                deleniti officia.              
-            </p>
-            <a href="about.html"><button class="about__btn--more">Learn More</button></a>
-        </div>
+        <div class="main__wrap--right">
+            <!-- Home -->
+            <section id="home">
+                <div class="home__container"> 
+                    <h1>안녕하세요! <br> 안시연입니다.</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus                     
+                    </p>
+                    <a href=""><button class="home__btn--contact">Contet Me </button></a>
+                </div>
+            </section>
+            <!-- about -->      
+            <section id="about"> 
+                <div class="about__img">
+                    <img src="imgs/shop1.jpg" 
+                        alt="Siyeon's profile photo"               
+                    />
+                </div>
+                <div class="about__introduce"> 
+                    <h1>About me </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+                        rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+                        deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+                        deleniti officia.              
+                    </p>
+                    <a href="about.html"><button class="about__btn--more">Learn More</button></a>
+                </div>
 
-    </section>
-    <!-- work -->
-    <section id="work"> 
-        <h1>My work </h1>
-        <div class="work__projects">            
-                <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
-                <div class="work__projects-descriotion">
-                    <h3>Cafe Site</h3>
-                    <span>Clone cording </span>   
-                </div>
-                <a href=""><button class="work__btn--more">Learn More</button></a>
-       
-                <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
-                <div class="work__projects-descriotion">
-                    <h3>Cafe Site</h3>
-                    <span>Clone cording </span>   
-                </div>
-                <a href=""><button class="work__btn--more">Learn More</button></a>
+            </section>
+            <!-- work -->
+            <section id="work"> 
+                <h1>My work </h1>
+                <div class="work__projects">            
+                        <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
+                        <div class="work__projects-descriotion">
+                            <h3>Cafe Site</h3>
+                            <span>Clone cording </span>   
+                        </div>
+                        <a href=""><button class="work__btn--more">Learn More</button></a>
+            
+                        <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
+                        <div class="work__projects-descriotion">
+                            <h3>Cafe Site</h3>
+                            <span>Clone cording </span>   
+                        </div>
+                        <a href=""><button class="work__btn--more">Learn More</button></a>
 
-              <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
-                <div class="work__projects-descriotion">
-                    <h3>Cafe Site</h3>
-                    <span>Clone cording </span>   
+                    <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
+                        <div class="work__projects-descriotion">
+                            <h3>Cafe Site</h3>
+                            <span>Clone cording </span>   
+                        </div>
+                        <a href=""><button class="work__btn--more">Learn More</button></a>
                 </div>
-                <a href=""><button class="work__btn--more">Learn More</button></a>
+            </section>
+            <!-- skils -->
+            <seciton id="skils"> 
+                <h1>Skills</h1>
+                <div class="skillset">                        
+                    <div class="skillset__imgs">
+                        <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
+                    </div>
+                    <div class="skillset__imgs">
+                        <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
+                    </div>
+                    <div class="skillset__imgs">
+                        <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
+                    </div>
+                    <div class="skillset__imgs">
+                        <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
+                    </div>
+                    <div class="skillset__imgs">
+                        <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
+                    </div>
+                <div class="skillset__btn">
+                        <a href="skills.html"><button class="skillset__btn--more">View All </button></a>
+                </div>        
+                </div>
+            </seciton>
+            <!-- contact -->
+            <section id="contact"> 
+                <div class="contact__container"> 
+                    <h1>Contact me </h1>
+                    <u1 class="contact__list">
+                        <li class="contact__list--email">dddd@gmail.com </li>
+                        <li class="contact__list--number">010-3838-3838</li>
+                        <a href=""><li class="contact__list--github">git.hub</li></a>
+                    </u1>
+                </div>
+                <div class="contact__img">
+                    <img src="imgs/shop1.jpg" 
+                        alt="Siyeon's profile photo"               
+                    />
+                </div>       
+            </section>
         </div>
-    </section>
-    <!-- skils -->
-    <seciton id="skils"> 
-        <h1>Skills</h1>
-        <div class="skillset">                        
-            <div class="skillset__imgs">
-                <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
-            </div>
-            <div class="skillset__imgs">
-                <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
-            </div>
-            <div class="skillset__imgs">
-                <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
-            </div>
-            <div class="skillset__imgs">
-                <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
-            </div>
-            <div class="skillset__imgs">
-                <img calss="skillset__imgs--html" src="imgs/skills/vintage.png" alt="">   
-            </div>
-           <div class="skillset__btn">
-                <a href="skills.html"><button class="skillset__btn--more">View All </button></a>
-           </div>        
-        </div>
-    </seciton>
-    <!-- contact -->
-    <section id="contact"> 
-        <div class="contact__container"> 
-            <h1>Contact me </h1>
-            <u1 class="contact__list">
-                <li class="contact__list--email">dddd@gmail.com </li>
-                <li class="contact__list--number">010-3838-3838</li>
-                <a href=""><li class="contact__list--github">git.hub</li></a>
-            </u1>
-        </div>
-        <div class="contact__img">
-            <img src="imgs/shop1.jpg" 
-                alt="Siyeon's profile photo"               
-            />
-        </div>       
-    </section>
+    </div>   
 </body>
 </html>

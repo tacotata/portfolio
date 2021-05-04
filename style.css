@@ -1,0 +1,124 @@
+/* Global */
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #F4F3EF;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #c6a9a3;
+    --color-dark-pink: #9a8194;
+    --color-black: #4d4d4d;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-green:#99bbad;
+       
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+  
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+    
+    /* Size */
+}
+
+    /* Universal tags */    
+* {
+    background: #ebd8b7;
+    /* padding 사용시 너비 높이 변경 없게 */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+    /* Typography */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
+}
+
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+  }
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0px;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0px;
+}
+
+    /* wrap */
+.main__wrap {
+    /* display: flex; */
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    /* width: 100%; */
+   
+}    
+.main__wrap--left {
+    width: 10%;
+    text-align: center;
+    height: 100vh;
+    position: fixed;  
+}
+
+.main__wrap--right {
+     width: 90%;       
+}
+    /* Navbar */
+
+#navbar {
+ 
+}
+
+
+.navbar__logo-big{
+    text-shadow: #FC0 5px 0 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 58px;
+}
+
+.navbar__logo-small{
+    margin: 0;
+    font-size: var(--font-micro);
+}
+
+.navbar__menu-item {
+     padding: 8px 12px; 
+     /* margin: 0 4px; */
+} 

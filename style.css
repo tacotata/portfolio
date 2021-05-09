@@ -34,7 +34,7 @@
 }
 
     /* Annimation */
-    --animation-duration: 300ms;
+    
 
     /* Universal tags */    
 * {
@@ -46,7 +46,7 @@
 body {
     background: var(--color-beige);    
     font-family: "Open Sans",sans-serif;
-    padding-left: 13rem;
+     padding-left: 13rem; 
     /*위 아래 내용 넘칠 때   */
     overflow-y: scroll;
     /* 왼 오 내용 넘칠 때 */
@@ -118,7 +118,7 @@ p {
 
 #navbar {
     text-align: center;
-    z-index: 3;
+    /* z-index: 1; */
 }
 
 .navbar__logo {  
@@ -165,6 +165,18 @@ p {
     color: var(--color-green);
 }
 
+.navbar__toggle-btn {
+     position:absolute; 
+     right:32px;
+     top:32px;
+    font-size: 48px;
+    display:none; 
+    color: var(--color-green);
+    background: none;
+    border:none;
+   
+}
+
     /* Home */
 
 #home {
@@ -192,7 +204,7 @@ p {
     padding: 14px 80px;
     letter-spacing: 4px;
     background: var(--color-pink);
-    border:none;
+    border: none;
     color: var(--color-dark-grey);
     border: 1px solid var(--color-pink);
 }
@@ -221,6 +233,7 @@ p {
     height: 100vh;  
     display: flex;
     justify-content: space-between;
+    padding: 90px 30px;  
 }
 
 .about__introduce{
@@ -397,13 +410,13 @@ p {
     /* Contact */
 
 #contact {
-  
+    height: 100vh; 
 } 
 
 .contact__container {
     align-items: center;
     justify-content: center; 
-    padding:45px 30px;  
+    padding: 0px 45px 30px;  
     height: 100vh; 
     display: flex;
     justify-content: space-around;  
@@ -453,4 +466,48 @@ p {
     width: 70px;
     height: 70px;
     opacity: 0;
+}
+@media screen and (max-width:768px) {
+    body{
+        padding: 1rem;
+        /* text-align: center;
+        justify-content: center;
+        align-items: center;   */
+    }
+    .navbar__toggle-btn {
+        display: block;
+    }
+    .navbar__logo{
+        margin-bottom: 50px;;
+    }
+    .main__wrap{
+        /* align-items: flex-start; */
+       flex-direction: column;
+     
+/* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+        
+     .main__wrap--left {  
+         text-align: center;
+          width: 100%;  
+         justify-content: center;
+        align-items: center;  
+        /* flex-direction: column; */
+        position:initial;
+      /* position:initial;  */
+       */
+
+    }
+
+      .navbar__logo , .navbar__menu{
+        width: 100%;  
+    /* text-align: center;
+        width: 100%;
+       justify-content: center;
+       align-items: center;   */
+       
+    }  
+
+     
 }

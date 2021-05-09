@@ -20,43 +20,50 @@
     <script src="main.js" defer></script> 
 </head>
 <body> 
-    <div class="main__wrap">  
+    <div class="main__wrap" >  
         <div class="main__wrap--left" >        
             <!-- Navbar -->
             <nav id = "navbar">
+                
                 <div class="navbar__logo"> 
                     <a href="#" class="navbar__logo-link">
-                    <h1 class="navbar__logo-big"> A </h1>     
-                    <p class="navbar__logo-small"> Siyeon </p>                     
+                    
+                        <h1 class="navbar__logo-big"> A </h1>     
+                        <p class="navbar__logo-small"> Siyeon </p>                     
                     </a>
                 </div>
+                
                 <ul class="navbar__menu">
-                    <li class="navbar__menu-item">Home</li>
-                    <li class="navbar__menu-item">About</li>
-                    <li class="navbar__menu-item">Work</li>
-                    <li class="navbar__menu-item">Skills</li>
-                    <li class="navbar__menu-item">Contact</li>
+                    <li class="navbar__menu-item" data-link="#home">Home</li>
+                    <li class="navbar__menu-item" data-link="#about">About</li>
+                    <li class="navbar__menu-item" data-link="#work">Work</li>
+                    <li class="navbar__menu-item" data-link="#skills">Skills</li>
+                    <li class="navbar__menu-item" data-link="#contact">Contact</li>
                 </ul> 
                 <ul class="navbar__icon">                   
                     <a href=""><li class="navbar__icon-sms"><i class="fas fa-sms"></i></li></a>                  
                     <a href=""><li class="navbar__icon-phone"><i class="fas fa-phone-square-alt"></i></li></a>
-                    <a href=""><li class="navbar__icon-git"><i class="fab fa-github-alt"></i></li></a>
-                    <a href=""><li class="navbar__icon-mail"><i class="far fa-envelope"></i></li></a>
+                    <a href=""><li class="navbar__icon-git"><i class="fas fa-comment-dots"></i></li></a>
+                    <a href=""><li class="navbar__icon-mail"><i class="fas fa-envelope"></i></li></a>
                 </ul>    
             </nav>
-        </div>
-
+        </div>        
         <div class="main__wrap--right">
+              <button class="navbar__toggle-btn">
+                            <i class="fas fa-bars"></i>
+                          </button>
             <!-- Home -->
             <section id="home">               
                 <div class="home__container"> 
-                    <h1>Hello, <br> I'm Siyeon </h1>                    
+                    <h1>Hello, <br> I'm Si-Yeon </h1>                    
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus                     
                     </p>
-                    <a href=""><button class="home__btn--contact">Contact Me </button></a>
-                </div>               
+                    <button class="home__btn--contact" id="contactBtn" onclick="contactBtn_click()">Contact Me </button>
+                </div>        
+                       
                 <div class="round"></div> 
+                
             </section>
 
             <!-- about -->      
@@ -71,7 +78,7 @@
                     </div>               
                     <div class="about__img">
                         <img src="imgs/Youtube2.png" 
-                            alt="Siyeon's profile photo" 
+                            alt="Si-Yeon's profile photo" 
                             class="about__img-img"              
                         />
                     </div>

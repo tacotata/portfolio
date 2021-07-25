@@ -90,6 +90,9 @@ p {
     color: var(--color-black);
     margin: 8px 0px;
 }
+button{
+    cursor: pointer;
+}
 
     /* wrap */
 
@@ -155,10 +158,15 @@ p {
     padding: 26px 6px;
     font-size: var(--font-regular);  
     color: var(--color-light-grey);
+    cursor: pointer;
 }
 
 .navbar__icon i:hover{
     color: var(--color-dark-pink);
+}
+
+.kakao__wrap {
+    display: none;
 }
 
 .navbar__toggle-btn {
@@ -250,7 +258,7 @@ p {
 	display: -webkit-box; 
 	-webkit-line-clamp: 4; 
 	-webkit-box-orient: vertical; 
-    font-size: var(--font-micro);
+    font-size: var(--font-small);
     margin-bottom: 2.5rem;
     line-height: 1.7;
 }
@@ -340,7 +348,8 @@ p {
     height: 100vh;      
 }
 
-.skills__container {
+.skills__container {    
+    position: relative;
     padding: 90px 30px; 
     align-items: center;
     justify-content: center;  
@@ -358,10 +367,12 @@ p {
     display: flex; 
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 } 
 .skills__slide-btn-prev, .skills__slide-btn-next {
     font-size: 12px;
     margin: 6px 0px;      
+    cursor: pointer;
 }
 
 .skills__slide-btn-next {
@@ -450,15 +461,16 @@ p {
     height: 100vh;  
     display: flex;
     justify-content: space-evenly; 
-    padding: 90px 30px; 
+    padding: 45px 30px; 
     align-items: center;
 }
 
 
 #map {       
-    box-shadow: -70px -72px var(--color-green); 
-    width: 640px;  
-    height: 420px;
+    box-shadow: -60px -92px var(--color-green); 
+    /* box-shadow: -70px -72px var(--color-green);  */
+    width: 657px;  
+    height: 460px;
 }
 
 .contact__description {    
@@ -479,6 +491,12 @@ p {
     padding: 10px 0 ;
     color: var(--color-light-gray);   
 }
+
+.contact__list a {
+  
+    color: var(--color-light-gray);   
+}
+
 
 .contact__list i {
     color: var(--color-dark-pink) ;
@@ -520,29 +538,43 @@ p {
 
 /* Skills More */
 
-.skills-more__container {
+#skills-more{
+    position:fixed;
+    top:55px;
+    right:60px;
+    background: var(--color-beige);       
+    display: none;
+    width: 80%;
+    border:1px solid var(--color-white);
+    z-index: 100;
+}
+
+
+.skills-more__container {    
     padding: 2rem ;
     display: flex;   
     padding: 90px 30px;
+    max-height: 600px;
+
 }
 .skills-more__introduce {
     flex-basis: 40%;
     padding: 20px 40px;   
+  
 }
 .skills-more__introduce p {
     line-height: 2rem;
-    /* padding:3rem 0; */
+    margin-bottom: 30px;   
+    font-size: var(--font-small);
 }
-
-    
-
 .skills-more__skillset {
     margin: 20px 0;
 }
 .skills-more__left {
     border:1px solid var(--color-white);
     flex-basis: 60%;
-    padding: 20px 40px;
+    padding: 50px 20px 40px;
+    
 }
 .skills-more__skill {
     margin-bottom: 2rem;
@@ -556,13 +588,78 @@ p {
     height: 3px;
     background: var(--color-grey);
 }
+
 .skills-more__skill-value {
     height:3px;
-    background: var(--color-green) ;
+    background: var(--color-green) ;    
 }
-.skills-more__right {
-    
+
+
+.skills-more__skill-bar  .stack1{
+    animation: stack1 3s 1;
+
 }
+.skills-more__skill-bar  .stack2{
+    animation: stack2 3s 1;
+
+}
+.skills-more__skill-bar  .stack3{
+    animation: stack3 3s 1;
+
+}
+.skills-more__skill-bar  .stack4{
+    animation: stack4 3s 1;
+
+}
+.skills-more__skill-bar  .stack5{
+    animation: stack5 3s 1;
+
+}
+
+@keyframes stack1 {
+   0%{width:0; color: var(--color-green);}
+   /* 40%{ color: var(--color-green);} */
+   100%{width:90%}
+}
+@keyframes stack2 {
+    0%{width:0; color: var(--color-green);}
+    40%{ color: var(--color-green);}
+    100%{width:85%}
+ }
+ @keyframes stack3 {
+    0%{width:0; color: var(--color-green);}
+    40%{ color: var(--color-green);}
+    100%{width:50%}
+ }
+ @keyframes stack4 {
+    0%{width:0; color: var(--color-green);}
+    40%{ color: var(--color-green);}
+    100%{width:40%}
+ }
+ @keyframes stack5 {
+    0%{width:0; color: var(--color-green);}
+    40%{ color: var(--color-green);}
+    100%{width:50%}
+ }
+
+
+
+.skillset__btn--close {
+    cursor: pointer;
+    font-size: var(--font-micro);    
+    padding: 16px 82px;   
+    background: var(--color-light-white); 
+    border:none;
+    letter-spacing: 2px;
+}
+
+.skillset__btn--close:hover {       
+    color: var(--color-light-white);   
+    transition: all .5s ease-in;   
+    box-shadow: inset 15rem 0 0 0 var(--color-pink);  
+}
+
+
 .tools,
 .etc {
     padding: 20px;
@@ -630,6 +727,7 @@ p {
 
     .navbar__menu li {
         border-bottom: 1px solid  var(--color-light-white);
+   
     }
     
     .navbar__menu :first-child {
@@ -642,16 +740,22 @@ p {
         cursor: pointer;   
     }    
 
+
+    
     .navbar__icon {    
         justify-content: initial;
         align-items: center;
         justify-content: center;
-        padding: 12px 12px 0 ;                 
+        padding: 12px 12px 0 ;   
+                   
     }
 
     .navbar__icon li :hover {
         color: var(--color-dark-pink);
+       
     } 
+   
+   
     /* Home   */
 
     .home__container {
@@ -683,6 +787,7 @@ p {
     .about__introduce p {
         padding: 0 10px;
         -webkit-line-clamp: 2; 
+        font-size: var(--font-micro);
     }
     
 

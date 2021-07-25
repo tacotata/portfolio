@@ -8,7 +8,7 @@
     <meta name="description" content="Portfolio for world-renowned software engineer Siyeon">
     <meta name="author" content="Siyeon">
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <!-- <link rel="icon" type="image/png" href="imgs/favicon.png"> -->
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/0b588c2a50.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
@@ -24,7 +24,7 @@
         <div class="main__wrap--left" >         
             <!-- Navbar -->
             <nav id = "navbar">
-                
+              
                 <div class="navbar__logo"> 
                     <a href="#" class="navbar__logo-link">
                     
@@ -40,16 +40,24 @@
                         <li class="navbar__menu-item" data-link="#skills">Skills</li>
                         <li class="navbar__menu-item" data-link="#contact">Contact</li>
                     </ul> 
+                   
                     <ul class="navbar__icon">                   
-                        <a href=""><li class="navbar__icon-sms"><i class="fas fa-sms"></i></li></a>                  
-                        <a href=""><li class="navbar__icon-phone"><i class="fas fa-phone-square-alt"></i></li></a>
-                        <a href=""><li class="navbar__icon-git"><i class="fas fa-comment-dots"></i></li></a>
-                        <a href=""><li class="navbar__icon-mail"><i class="fas fa-envelope"></i></li></a>
-                    </ul>    
+                        <li class="navbar__icon-sms"><i class="fas fa-sms"></i></li>               
+                      <a href="#contact"> <li class="navbar__icon-phone"><i class="fas fa-phone-square-alt"></i></li></a>
+                      <a href="#contact">    <li class="navbar__icon-git"><i class="fas fa-comment-dots"></i></li></a>
+                        <li class="navbar__icon-mail"><a href="mailto:a01079074499@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    </ul> 
+                    <div class="kakao__wrap" >
+                        <img  class ="kakao" src="imgs\KakaoTalk_siyeon_qr.jpg"  width="100px"alt="">
+                    </div>
                 </div>
+              
             </nav>
-         </div>         
+            
+         </div>  
+                
         <div class="main__wrap--right">
+           
               <button class="navbar__toggle-btn">
                 <i class="fas fa-bars"></i>
              </button>
@@ -58,7 +66,7 @@
                 <div class="home__container"> 
                     <h1>Hello, <br> I'm Si-Yeon </h1>                    
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus                     
+                        👋 안녕하세요. 꾸준히 배우는 안시연입니다. 방문해주셔서 감사합니다.
                     </p>
                     <button class="home__btn--contact" id="contactBtn" onclick="contactBtn_click()">Contact Me </button>
                 </div>        
@@ -73,7 +81,8 @@
                     <div class="about__introduce"> 
                         <h1>About Me </h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            좋아하는 것도 하고 싶은 것도 궁금한 것도 많아요! 꾸준히  노력하며 배움에 감사합니다.👩‍💻<br>
+                            긍정적으로 시작해💃💃 책임감 있게 끝냅니다.💪 
                         </p>
                         <a href="about.html"><button class="about__btn more">Learn More</button></a>
                     </div>     
@@ -92,21 +101,23 @@
                     <h1>My work </h1>             
                     <u1 class="work__projects">                       
                         <li  class="work__projects-description">
-                            <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
+                           
+                            <img calss="work__projects-img" src="imgs/projects/work1.png" alt=""> 
+                       
                             <h2>Cafe Site</h2>
-                            <p>Clone cording </p>   
-                            <a href=""><button class="work__btn more">Learn More</button></a>
+                            <p>HTML  CSS  Js  Java</p>   
+                            <a href="https://createa.herokuapp.com/"  target='_blank'><button class="work__btn more">Learn More</button></a>
                         </li>           
                         <li class="work__projects-description">                          
-                            <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
-                            <h2>Cafe Site</h2>
-                            <p>cafe site cording </p>   
+                            <img calss="work__projects-img" src="imgs/projects/work2.png" alt=""> 
+                            <h2>Todo List</h2>
+                            <p>HTML CSS React </p>   
                             <a href=""><button class="work__btn more">Learn More</button></a>    
                         </li>
                         <li class="work__projects-description">
-                            <img calss="work__projects-img" src="imgs/projects/Youtube4.png" alt=""> 
-                            <h2>Cafe Site</h2>
-                            <p>Clone cording </p>   
+                            <img calss="work__projects-img" src="imgs/projects/work3.png" alt=""> 
+                            <h2>My Portfolio</h2>
+                            <p>HTML CSS Js </p>   
                             <a href=""><button class="work__btn more">Learn More</button></a>
                         </li>                       
                     </u1>
@@ -144,10 +155,96 @@
                         </div>
                     </div>
                         <div class="skillset__btn">
-                        <a href="skills.html"><button class="skillset__btn more">View All </button></a>
+                        <button class="skillset__btn more">View All </button>
                         </div> 
-                </div>                 
+                </div>   
             </seciton>
+
+            <!-- skills-more -->
+            <section id="skills-more" class="section">
+           
+                <div class="skills-more__container">                
+
+                <div class="skills-more__introduce">
+                  <h1> My Skills</h1>
+                  <p>
+                   배우는 걸 좋아하고 즐겁게 배워요. <br> Skils는 HTML 기준으로 작성했습니다.  
+                   
+                  </p>                
+                    <button class="skillset__btn--close">close </button>
+                
+                </div>
+                
+                  <!-- <div class="skills-more__skillset"> -->
+                    <div class="skills-more__left">
+                      <!-- <h3 class="skills-more__title">Skills</h3> -->
+                      
+                      <div class="skills-more__skill">
+                        <div class="skills-more__skill-description">
+                          <span>HTML</span>
+                          
+                        </div>
+                        <div class="skills-more__skill-bar ">
+                          <div class="skills-more__skill-value  stack1 " style="width: 90%;"></div>
+                        </div>
+                      </div>
+                      <div class="skills-more__skill">
+                        <div class="skills-more__skill-description">
+                          <span>CSS</span>
+                        
+                        </div>
+                        <div class="skills-more__skill-bar ">
+                          <div class="skills-more__skill-value  stack2" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                      <div class="skills-more__skill">
+                        <div class="skills-more__skill-description">
+                          <span>JavaScript</span>
+                         
+                        </div>
+                        <div class="skills-more__skill-bar ">
+                          <div class="skills-more__skill-value stack3 " style="width: 50%;"></div>
+                        </div>
+                      </div>
+                      <div class="skills-more__skill">
+                        <div class="skills-more__skill-description">
+                          <span>React</span>
+                          
+                        </div>
+                        <div class="skills-more__skill-bar ">
+                          <div class="skills-more__skill-value  stack4" style="width: 40%;"></div>
+                        </div>
+                      </div>
+                      <div class="skills-more__skill">
+                        <div class="skills-more__skill-description">
+                          <span>Java</span>
+                          
+                        </div>
+                        <div class="skills-more__skill-bar ">
+                          <div class="skills-more__skill-value stack5 " style="width: 50%;"></div>
+                        </div>
+                      </div>                    
+                    </div>
+                    <!-- <div class="skills-more__right">
+                      <div class="skills-more tools">
+                        <h3 class="skills-more__title">Tools</h3>
+                        <ul class="skills-more__tools-list">
+                          <li><span>Visual Studio Code</span></li>
+                          <li><span>IntelliJ</span></li>                     
+                        </ul>
+                      </div>
+                      <div class="kills-more etc">
+                        <h3 class="skills-more__title">Etc</h3>
+                        <ul class="skills-more__etc-list">
+                          <li><span>Git</span></li>                     
+                        </ul>
+                      </div>
+                    </div> -->
+                <!-- </div> -->
+                
+              </div>
+              
+            </section>
             
             <!-- contact --> 
             <section id="contact"> 
@@ -162,8 +259,8 @@
                         <h1>Contact me </h1>
                         <u1 class="contact__list">
                             <li class="contact__list--location"><i class="fas fa-map-marker-alt"></i>Suyoung-gu, Busan </li>
-                            <li class="contact__list--number"><i class="fas fa-phone-alt"></i>010-3838-3838</li>
-                            <li class="contact__list--email"><i class="fas fa-envelope-open"></i>dddd@gmail.com </li>
+                            <li class="contact__list--number"><i class="fas fa-phone-alt"></i>010-7907-4499</li>
+                            <a href="mailto:a01079074499@gmail.com"> <li class="contact__list--email"><i class="fas fa-envelope-open"></i>a01079074499@gmail.com </li></a>
                         </u1>                   
                     </div>  
                                
